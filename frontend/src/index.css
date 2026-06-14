@@ -1,0 +1,55 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georgia", serif;
+}
+
+
+/* PAGE WRAPPER */
+
+.page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at 20% 20%, #ff004c, transparent 40%),
+    radial-gradient(circle at 80% 20%, #ff4d00, transparent 40%),
+    radial-gradient(circle at 20% 80%, #0040ff, transparent 40%),
+    radial-gradient(circle at 80% 80%, #00ffcc, transparent 40%),
+    #0f0f0f;
+  background-size: cover;
+}
+
+
+/* MUI INPUT TEXT COLOR FIX */
+
+.MuiInputBase-input {
+  color: white !important;
+}
+
+.MuiInputLabel-root {
+  color: white !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+
+
+/* BUTTON HOVER EFFECT */
+
+.MuiButton-contained:hover {
+  transform: scale(1.03);
+}

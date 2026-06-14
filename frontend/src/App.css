@@ -1,0 +1,236 @@
+/* ================= GLOBAL ================= */
+body {
+  margin: 0;
+  font-family: "Georgia", serif;
+  color: #42321f;
+  background-color: #f1e2c8;
+  background-image: url("https://www.publicdomainpictures.net/pictures/320000/velka/antique-paper-texture-1577026411HpN.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(149, 111, 56, 0.35);
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background-color: rgba(60, 43, 27, 0.92);
+  border-bottom: 1px solid rgba(255, 230, 180, 0.25);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.logo {
+  color: #f3e2c9;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e9d4b2;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffe7c3;
+  transform: translateY(-1px);
+}
+
+/* ================= HERO ================= */
+.hero {
+  text-align: center;
+  padding: 100px 24px;
+  color: #ebe8e6;
+  background-image: linear-gradient(rgba(243, 229, 204, 0.95), rgba(243, 229, 204, 0.95)),
+    url("https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1400&q=80");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  border-bottom: 1px solid rgba(66, 50, 31, 0.2);
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 12px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #ece8e4;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.hero-buttons {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+/* ================= BUTTON ================= */
+button {
+  margin: 10px;
+  padding: 14px 24px;
+  background: linear-gradient(140deg, #8c6947, #5a3f27);
+  color: #fff8ea;
+  border: 1px solid rgba(255, 235, 196, 0.35);
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 15px;
+  letter-spacing: 0.03em;
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+button:hover {
+  background: linear-gradient(140deg, #a67a53, #6d4a31);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.18);
+}
+
+/* ================= SECTIONS ================= */
+.section {
+  padding: 60px 24px;
+  text-align: center;
+  background: rgba(247, 233, 211, 0.92);
+  border-top: 1px solid rgba(160, 113, 67, 0.2);
+  border-bottom: 1px solid rgba(160, 113, 67, 0.2);
+  
+}
+
+.section h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #4d3722;
+}
+
+.section p {
+  font-size: 17px;
+  color: #5b4225;
+  margin-bottom: 22px;
+}
+
+.section:nth-of-type(odd) {
+  background: rgba(244, 231, 205, 0.92);
+}
+
+/* ================= PRODUCT GRID ================= */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+/* ================= PRODUCT CARD ================= */
+.card {
+  width: 250px;
+  min-height: 380px;
+  background: linear-gradient(180deg, #fbf2e6 0%, #f0e1c8 100%);
+  border: 1px solid rgba(160, 109, 57, 0.45);
+  padding: 22px 18px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 18px 35px rgba(37, 25, 15, 0.1);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px rgba(37, 25, 15, 0.16);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  border: 3px solid rgba(151, 109, 72, 0.5);
+}
+
+.card h3 {
+  margin: 10px 0 6px;
+  font-size: 20px;
+  color: #4b3722;
+}
+
+.card p {
+  color: #72593f;
+  font-weight: 700;
+}
+
+.card-buttons {
+  margin-top: 14px;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background-color: rgba(62, 45, 29, 0.95);
+  color: #f4dec2;
+  text-align: center;
+  padding: 24px 20px;
+  font-size: 15px;
+  border-top: 1px solid rgba(255, 235, 196, 0.15);
+}
+
+/* ================= INPUT FIELDS ================= */
+input, textarea {
+  padding: 12px;
+  width: 250px;
+  border: 1px solid #a47e5f;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-family: Georgia, serif;
+  background: rgba(255, 250, 241, 0.95);
+  color: #453623;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section {
+    padding: 45px 18px;
+  }
+}
